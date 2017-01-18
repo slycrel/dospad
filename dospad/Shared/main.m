@@ -273,8 +273,10 @@ int main(int argc, char *argv[]) {
 
         // Auto mount
 #ifndef IDOS // DOSPAD for CYDIA
-        strcpy(diskc, "/var/mobile/Documents");
-        strcpy(diskd, [[fso documentsDirectory] UTF8String]);
+//        strcpy(diskc, "/var/mobile/Documents");
+//        strcpy(diskd, [[fso documentsDirectory] UTF8String]);
+        strcpy(diskc, [[fso documentsDirectory] UTF8String]);
+        strcpy(diskd, "/var/mobile/Documents");
 #else
         strcpy(diskc, [[fso documentsDirectory] UTF8String]);
         strcpy(diskd, "/var/mobile/Documents");
